@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+kasumi-main/
+ram-main/
+*.tsbuildinfo
+.superpowers/
+.agents/
+skills-lock.json
+.smoke/
+*.tgz
+
+.claude/
+
+# Internal planning docs and one-off scripts, not for the public repo
+docs/superpowers/

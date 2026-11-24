@@ -1,0 +1,27 @@
+{
+  "name": "flint-monorepo",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "scripts": {
+    "build": "pnpm -r --filter react-flint build",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm build && pnpm --filter docs build",
+    "docs:serve": "pnpm --filter docs serve",
+    "test": "pnpm -r --filter react-flint test",
+    "typecheck": "pnpm -r --filter react-flint typecheck"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsdom": "^31.0.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tsup": "^9.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
