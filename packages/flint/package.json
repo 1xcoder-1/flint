@@ -1,0 +1,40 @@
+{
+  "name": "react-flint",
+  "version": "0.1.0",
+  "description": "Flint: twenty-two tactile grain effects for React on one dependency-free Canvas2D engine.",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "animation",
+    "particles",
+    "dissolve",
+    "grain",
+    "morph",
+    "shatter",
+    "nextjs",
+    "flint",
+    "prefers-reduced-motion"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup && tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}
